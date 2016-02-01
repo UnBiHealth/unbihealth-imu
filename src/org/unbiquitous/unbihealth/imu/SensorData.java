@@ -8,7 +8,7 @@ import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
 public class SensorData {
 	@JsonProperty(required = true)
-	private Integer id;
+	private String id;
 
 	@JsonProperty(required = true)
 	private Long timestamp;
@@ -18,11 +18,11 @@ public class SensorData {
 	@JsonDeserialize(using = QuaternionDeserializer.class)
 	private Quaternion quaternion;
 
-	public Integer getId() {
+	public String getId() {
 		return id;
 	}
 
-	public void setId(Integer sensor) {
+	public void setId(String sensor) {
 		this.id = sensor;
 	}
 
