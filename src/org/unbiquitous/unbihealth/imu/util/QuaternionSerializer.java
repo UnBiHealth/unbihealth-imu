@@ -1,4 +1,4 @@
-package org.unbiquitous.unbihealth.imu;
+package org.unbiquitous.unbihealth.imu.util;
 
 import java.io.IOException;
 
